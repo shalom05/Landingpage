@@ -1,0 +1,314 @@
+@font-face {
+    font-family: "Tungtesn-Bold";
+    src: url(Tungsten-Bold.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Este es el css de la barra de navegación */
+nav { 
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 50px;
+    align-items: center;
+
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar-left ul {
+    margin-left: 30px;
+}
+
+.navbar-left ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+
+}
+
+.navbar-left ul li {
+    margin: 0px 40px 0px 40px;
+}
+
+.Logo {
+    width: 65px;
+    height: 45px;
+}
+
+.button-signup {
+    position: relative;
+    background-color: #FF4654;
+    border-radius: 25px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 115px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+.button-signup::before {
+    content: "";
+    background-color: rgb(220, 47, 84);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+.button-signup:hover::before {
+    width: 100%;
+  }
+
+  
+
+/* Este es el css de la presentación */
+.info-container {
+    display: flex;
+}
+
+.description-container {
+    height: 771px;
+    background-image: url(./img/fondo.png);
+}
+
+.info-description {
+    width: 417px;
+    height: 225px;
+    position: relative;
+}
+
+.info-description {
+    width: 50%;
+}
+
+.character1 {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+
+}
+.information {
+    position: absolute;
+    width: 417px;
+    top: 250px;
+    left: 50px;
+    color: white;
+}
+
+.log-in {
+    position: absolute;
+    background-color: #F440DF;
+    border-radius: 25px;
+    box-shadow: #ff52eb 0px 4px 0px 0px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 115px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 410px;
+    left: 300px;
+  }
+  
+.log-in::before {
+    content: "";
+    background-color: #f15de0;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+.log-in:hover::before {
+    width: 100%;
+  }
+
+/* Este es el css del carrusel */
+.carrusel-container { 
+    height: 877px;
+    background-image: url(./img/background\ image.png);
+    
+}
+
+.movels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.galery {
+    height: 559px;
+}
+
+.galery-cell {
+    width: 66%;
+    height: 559px;
+    margin-right: 60px;
+    background-color: aquamarine;
+    counter-increment: galery-cell;
+    border-radius: 20px;
+}
+
+.showcase {
+    position: absolute;
+    display: flex;
+    width: 1081px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.4) 100%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.galery .flickity-prev-next-button {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+ }
+.galery .flickity-prev-next-button:hover {
+    background: transparent;
+ }
+.galery .flickity-prev-next-button .arrow {
+    fill: white;
+ }
+
+.flickity-page-dots {
+    margin-top: 0px;
+  }
+
+.galery .flickity-page-dots {
+    bottom: 30px;
+ }
+.galery .flickity-page-dots .dot {
+    width: 30px;
+    height: 4px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.5);
+    border: 0 solid white;
+    border-radius: 0;
+ }
+.galery .flickity-page-dots .dot.is-selected {
+    background: #f00;
+    border: 0 solid #f00;
+ } 
+
+ /* Este es el css de cada carta del carrusel */
+.info-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 200px;
+}
+
+.info-left {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.info-left h1 {
+    text-align: start;
+    font-size: 80px;
+    color: white;
+    margin-right: 120px;
+    font-family: "Tungtesn-Bold";
+    margin-left: 80px;
+    line-height: 70px;
+
+}
+
+.info-left span {
+    color: #F440DF;
+}
+
+.info-left h4 {
+    font-family: "Tungtesn-Bold";
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    margin-left: 180px;
+    margin-bottom: 0;
+}
+
+.info-left p {
+    color: white;
+    font-size: 14px;
+    margin-right: 100px;
+    margin-left: 180px;
+
+}
+
+.info-rigth {
+    width: 50%;
+    position: relative;
+    left: 100px;
+}
+
+.info-rigth img {
+    position: absolute;
+
+}
+
+#sova span {
+    color: #66F7FF;
+
+}
+
+#sage span {
+    color: #421F4D;
+}
+
+#omen span {
+    color: #1A468F;
+}
+
