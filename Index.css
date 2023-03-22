@@ -18,14 +18,16 @@ nav {
     padding: 0 50px;
     align-items: center;
     height: 70px;
-
+    text-decoration: none;
 }
 
 .Logo {
     width: 65px;
     height: 45px;
 }
-
+a{
+    text-decoration: none;
+}
 .button-signup {
     position: relative;
     background-color: #FF4654;
@@ -46,6 +48,7 @@ nav {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
   }
   
 .button-signup::before {
@@ -59,10 +62,12 @@ nav {
     z-index: -1;
     transition: width 700ms ease-in-out;
     display: inline-block;
+    text-decoration: none;
   }
   
 .button-signup:hover::before {
     width: 100%;
+    text-decoration: none;
   }
 
   
@@ -102,6 +107,7 @@ nav {
 }
 
 .log-in {
+    appearance: none;
     position: absolute;
     background-color: #F440DF;
     border-radius: 25px;
